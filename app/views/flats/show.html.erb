@@ -1,0 +1,9 @@
+<h1>More Info</h1>
+<h3><%= @flat.name %></h3>
+<p>Description: <%= @flat.description %></p>
+<p><%= @flat.address %></p>
+<ul class="list-inline">
+  <li><i class="fas fa-user-friends"></i> <%= @flat.number_of_guests %></li>
+  <li><i class="fas fa-euro-sign"></i> <%= @flat.price_per_night %></li>
+</ul>
+<%= link_to 'Back to the list', flats_path %>

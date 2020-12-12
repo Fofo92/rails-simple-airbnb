@@ -9,5 +9,7 @@ class Flat < ApplicationRecord
     numericality: { only_integer: true, greater_than: 0 }
   validates :number_of_guests,
     presence: true,
-    numericality: { only_integer: true, greater_than: 0 }
+    numericality: { only_integer: true,
+                    greater_than: 0,
+                    less_than_or_equal_to: 5 }
 end
